@@ -1,0 +1,48 @@
+@font-face
+{
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Arimo'), url(https://fonts.gstatic.com/s/arimo/v9/wZLYhRRxZWGToTRP78bqJQ.woff) format('woff');
+}
+
+*
+{
+  text-align: center;
+  font-family: Arimo, sans-serif;
+  color: white;
+}
+
+body
+{
+  background-color: #141F2E
+}
+
+nav
+{
+  font-size: 20pt;
+  margin-bottom: 20px;
+  height: 50px;
+
+}
+
+.navLink
+{
+  display: inline;
+  height: inherit;
+  vertical-align: -11px;
+}
+
+.seperator
+{
+  display: inline;
+  vertical-align: -9px;
+}
+
+.logo
+{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
