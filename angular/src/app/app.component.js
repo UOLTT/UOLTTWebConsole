@@ -8,15 +8,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
-        this.name = 'Ben';
+        this.title = 'UOLTT Web Console';
+        this.Hero = {
+            id: 1,
+            name: "Baws Ship"
+        };
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "<h1>Hello {{name}}</h1>",
+        template: "\n    <h1>{{title}}</h1>\n    <h2>{{Hero.name}} details</h2>\n    <div>\n      <label>Id: </label>\n      {{Hero.id}}</div>\n    <div>\n      <label>Name: </label>\n      <input [(ngModel)] = \"Hero.name\" placeholder=\"name\">\n    </div>\n  ",
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
+var Hero = (function () {
+    function Hero() {
+    }
+    return Hero;
+}());
+exports.Hero = Hero;
 //# sourceMappingURL=app.component.js.map
